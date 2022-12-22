@@ -3,6 +3,15 @@
 ## Installation
 
 ```bash
+# install rabbitmq + redis
+sudo apt-get update
+sudo apt-get install rabbitmq-server redis-server
+
+# then start it
+sudo systemctl start rabbitmq-server
+sudo systemctl start redis-server
+
+# install python deps
 pip install -r requirements.txt
 ```
 
