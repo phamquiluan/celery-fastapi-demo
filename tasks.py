@@ -18,3 +18,7 @@ def task2(input_string):
 def task3(input_string):
     result = input_string + " by task 3"
     return result
+
+@celery_app.task
+def task4(input_strings):
+    return input_strings[0] + " + " + input_strings[1]
